@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>calculator</h1>
+    <input type="number" placeholder="number one" id="one">
+    <input type="number" placeholder="number two" id="two">
+    <button onclick="add()">+</button>
+    <button onclick="substraction()">-</button>
+    <button onclick="divide()">/</button>
+    <button onclick="multiplication()">*</button>
+
+    <h1 class="text-center mt-5">circle</h1>
+    <input type="text" placeholder="radius" id="rad">
+    <button onclick="cir()">calculate</button>
+
+    <h1 class="text-center mt-5">triangle</h1>
+    <input type="text" placeholder="base" id="ba">
+    <input type="text" placeholder="height" id="hei">
+    <button onclick="tri()">calculate</button>
+
+    <h1 class="text-center mt-5">bmi</h1>
+    <input type="text" placeholder="weight" id="kg">
+    <input type="text" placeholder="meter" id="me">
+    <button onclick="bm()">calculate</button>
+
+
+
+    <script>
+        function divide() {
+            alert(one.value/two.value)
+        }
+
+        function multiplication() {
+            alert(one.value*two.value)
+        }
+
+        function add() {
+            alert(parseFloat (one.value)+ parseFloat(two.value))
+        }
+
+        function substraction() {
+            alert(one.value-two.value)
+        }
+
+        function cir() {
+            alert ((22/7)* rad.value * rad.value)
+        }
+
+        
+        function tri() {
+            alert('The area of the triangle is'+ .5*ba.value*hei.value +'cm2')
+        }
+
+        function bm() {
+            alert(kg.value/(me.value*me.value))
+        }
+        
+    </script>
+</body>
+</html>
